@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anthony Behm on Anthony Behm - Taller Fabricación 2021</title>
-    <link>https://a-behm.github.io/taller-fabricacion/</link>
+    <link>https://a-behm.github.io/</link>
     <description>Recent content in Anthony Behm on Anthony Behm - Taller Fabricación 2021</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://a-behm.github.io/taller-fabricacion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://a-behm.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>0 - Fabricación digital</title>
-      <link>https://a-behm.github.io/taller-fabricacion/docs/0-fabricacipon-digital/</link>
+      <link>https://a-behm.github.io/docs/0-fabricacipon-digital/</link>
       <pubDate>Thu, 17 Jun 2021 19:30:08 +1000</pubDate>
       
-      <guid>https://a-behm.github.io/taller-fabricacion/docs/0-fabricacipon-digital/</guid>
+      <guid>https://a-behm.github.io/docs/0-fabricacipon-digital/</guid>
       <description>Contenido encargo 1.</description>
     </item>
     
     <item>
       <title>1 - Planimetrías</title>
-      <link>https://a-behm.github.io/taller-fabricacion/docs/1-planimetr%C3%ADas/</link>
+      <link>https://a-behm.github.io/docs/1-planimetr%C3%ADas/</link>
       <pubDate>Thu, 17 Jun 2021 19:30:08 +1000</pubDate>
       
-      <guid>https://a-behm.github.io/taller-fabricacion/docs/1-planimetr%C3%ADas/</guid>
+      <guid>https://a-behm.github.io/docs/1-planimetr%C3%ADas/</guid>
       <description>Contenido planimetrias.</description>
     </item>
     
     <item>
       <title>Ejemplo Shortcodes</title>
-      <link>https://a-behm.github.io/taller-fabricacion/docs/ejemplo/</link>
+      <link>https://a-behm.github.io/docs/ejemplo/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://a-behm.github.io/taller-fabricacion/docs/ejemplo/</guid>
+      <guid>https://a-behm.github.io/docs/ejemplo/</guid>
       <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
     </item>
     
     <item>
       <title>Ejemplos Markdown</title>
-      <link>https://a-behm.github.io/taller-fabricacion/docs/markdown/</link>
+      <link>https://a-behm.github.io/docs/markdown/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://a-behm.github.io/taller-fabricacion/docs/markdown/</guid>
+      <guid>https://a-behm.github.io/docs/markdown/</guid>
       <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
     </item>
     
