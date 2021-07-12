@@ -126,6 +126,19 @@
   <h2 id="mecanizado-cnc">Mecanizado CNC</h2>
 <p><img src="/taller-fabricacion/img/2-cnc/f1.jpg" alt="f1"></p>
 <p>El mecanizado CNC, o también conocido como control numérico computarizado, es una tecnología que nace en el siglo pasado que tenía como finalidad fomentar el proceso de industrialización, facilitando procesos de construcción. En palabras simples, el mecamizado CNC es la introducción de la computadora dentro del ámbito industrial, permitiendo controlar y monitorear los movimientos y accionar de una herramienta. De esta forma el mecanizado puede aplicar para varios tipos de herramientas, tales como fresadoras, maquinas de corte laser, chorro de agua, rectificadora, entre otras. Hoy en día, estás maquinas suponen una nueva oportunidad para el mercado, ya que gracias a la descentralización, la digitalización y la gran cantidad de contenido que se puede encontrar en la web, las máquinas CNC podrían salir de los grandes talleres industriales y acercarse al consumidor, ofreciendo una nueva forma de producción a lo largo del mundo, donde cada consumidor con acceso a una maquina podría producir sus productos, logrando la descentralización de la producción mundial y un sistema sustentable con el medio ambiente.</p>
+<h3 id="tipos-de-cnc">Tipos de CNC</h3>
+<p>Hoy en dia, existen una gran diversidad de maquinas CNC, dentro de las cuales podemos encontrar las siguientes:</p>
+<ul>
+<li>Fresadora.</li>
+<li>Torno.</li>
+<li>Rectificadora.</li>
+<li>Cortadora laser (por chorro de agua o por electroerosión).</li>
+<li>Estampadora.</li>
+<li>Prensa.</li>
+<li>Brazo robotico.</li>
+<li>Impresoras 3D.</li>
+</ul>
+<p>Luego, los sistemas de CNC se clasifican según cómo cumplen sus funciones - cómo cortan -. Se pueden clasificar en: Máquinas de control punto a punto, de control pariaxal, de control interpolar o continuo.</p>
 <h2 id="silla-fresia">Silla Fresia</h2>
 <h1 id="fusion">Fusion</h1>
 <div>
@@ -140,6 +153,40 @@
     </iframe>    
 </div>
 <h1 id="proceso-de-corte">Proceso de corte</h1>
+<p>En modo DESIGN haremos un rectángulo de 1220 mm x 1220 mm, el cual se extruye hacia arriba en 15 mm para simular media plancha de terciado, la cual será utilizada para hacer las piezas.</p>
+<p>Luego se toman las piezas de la silla que deban ser mecanizadas, se alinean con el plano xy y luego se acomodan ordenadamente en la plancha para aprovechar bien su espacio; en este paso es importante que la parte donde se hará el calado quede mirando boca arriba para que la máquina pueda hacer bien su trabajo.</p>
+<p><img src="/taller-fabricacion/img/MecanizadoCNCgrupo/piezasCarmi02.png" alt="MaquinaCNC"></p>
+<p>Luego iremos a MANUFACTURE y creo un nuevo Setup , para este elegiremos la máquina Generic CNC de 3 Axis. Será necesario definir la plancha como el sólido sobre cual se hará el calado; los Modelos que serán las piezas. Luego establecemos la orientación, que definiremos como eje z, la cara superior del rectángulo y eje x el borde de éste. El tipo de operación es Milling.</p>
+<ol>
+<li>En primer lugar haremos Contour2d sobre los orificios y el contorno inferior de las piezas. Para esto, elegiremos una Fresa de 6mm para realizar los cortes. Debido a que la plancha mide 15mm y la fresa Flat end Mill de 6mm, para que no se dañe la máquina ni nuestras piezas, es necesario ir a Passes y en Multiple Depths poner un alto de 3mm, de esta forma la máquina hará varias pasadas para ir cortando, en vez de sólo 1.</li>
+</ol>
+<blockquote>
+<p>Universalmente se usa el 50% del largo de la máquina</p>
+</blockquote>
+<ol start="2">
+<li>
+<p>Luego se realiza un Pocket2d sobre las piezas que requieren rebaje en ciertas áreas. Será necesario repetir el paso de Multiple Depths de 3mm de alto.</p>
+</li>
+<li>
+<p>Para que no se dañen las piezas con la vibración de la máquina, es necesario hacer unos pequeños Tab de 3mm que permitirán que no se corte la pieza entera, sino que dejará pequeños espacios que ayudarán a afirmarla.</p>
+</li>
+</ol>
+<blockquote>
+<p>Fresa es la herramienta de corte que va insertada en la máquina.</p>
+</blockquote>
+<h1 id="asiento">Asiento</h1>
+<p><img src="/taller-fabricacion/img/MecanizadoCNCgrupo/Asiento02.png" alt="MaquinaCNC"></p>
+<p>Para el asiento, en Design se debe hacer un Sketch rectangular con extrusión de 9mm para simular la plancha de terciado; luego posicionar el asiento sobre este.</p>
+<p>Lo siguiente es ir a Manufacture y crear un Setup similar al hecho para las piezas mecanizadas.</p>
+<ol>
+<li>
+<p>Ahora se hace un Contour2d con la misma configuración anterior sobre el contorno del asiento y como sólido la plancha.</p>
+</li>
+<li>
+<p>La última función que haremos es Trace que se encargará de decirle a la máquina por el recorrido que cortar. En este caso la fresa realizará cortes de tan solo 4.5mm de profundidad.</p>
+</li>
+</ol>
+<h1 id="proceso-completo">Proceso completo</h1>
 <div>
     <video 
     width="100%" 
@@ -159,7 +206,7 @@
 <p><img src="/taller-fabricacion/img/2-cnc/patas_delanteras_3.jpg" alt="f6"></p>
 <p><img src="/taller-fabricacion/img/2-cnc/patas_delanteras_5.jpg" alt="f8"></p>
 <p><img src="/taller-fabricacion/img/2-cnc/patas_delanteras_6.jpg" alt="f9"></p>
-<h1 id="asiento">Asiento</h1>
+<h1 id="asiento-1">Asiento</h1>
 <p><img src="/taller-fabricacion/img/2-cnc/asiento_1.jpg" alt="f10"></p>
 <p><img src="/taller-fabricacion/img/2-cnc/asiento_2.jpg" alt="f11"></p>
 <p><img src="/taller-fabricacion/img/2-cnc/asiento_3.jpg" alt="f12"></p>
