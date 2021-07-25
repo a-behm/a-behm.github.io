@@ -8,30 +8,66 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 17 May 2021 19:30:08 +1000</lastBuildDate><atom:link href="https://a-behm.github.io/taller-ciudad-espacio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>1-Tema</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/1-tema/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/1-tema/</guid>
+      <description>Primera presentanción</description>
+    </item>
+    
+    <item>
+      <title>2-Dibujos</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/2-dibujos/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/2-dibujos/</guid>
+      <description>Dibujos a mano alzada</description>
+    </item>
+    
+    <item>
+      <title>3-Propuesta de valor</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/3-propuesta-de-valor/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/3-propuesta-de-valor/</guid>
+      <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
+    </item>
+    
+    <item>
+      <title>4-Animación</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/4-animaci%C3%B3n/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/4-animaci%C3%B3n/</guid>
+      <description>Mapa y aniamción del proyecto</description>
+    </item>
+    
+    <item>
+      <title>5-Modeleados 3D</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/5-modelados-3d/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/5-modelados-3d/</guid>
+      <description>Modelos 3D referentes al proyecto</description>
+    </item>
+    
+    <item>
+      <title>6-Midterm</title>
+      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/6-midterm/</link>
+      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
+      
+      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/6-midterm/</guid>
+      <description>Presentación Midterm</description>
+    </item>
+    
+    <item>
       <title>Ejemplo Shortcodes</title>
       <link>https://a-behm.github.io/taller-ciudad-espacio/docs/ejemplo/</link>
       <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
       
       <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/ejemplo/</guid>
       <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
-    </item>
-    
-    <item>
-      <title>Encargo 2</title>
-      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/encargo-02/</link>
-      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
-      
-      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/encargo-02/</guid>
-      <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
-    </item>
-    
-    <item>
-      <title>Dibujos mano alzada</title>
-      <link>https://a-behm.github.io/taller-ciudad-espacio/docs/encargo-01/</link>
-      <pubDate>Mon, 17 May 2021 19:30:08 +1000</pubDate>
-      
-      <guid>https://a-behm.github.io/taller-ciudad-espacio/docs/encargo-01/</guid>
-      <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
     </item>
     
     <item>
