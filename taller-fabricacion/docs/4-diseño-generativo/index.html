@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>3 - Mecanizado 2.5 ejes - Anthony Behm - Taller Fabricación 2021</title>
+  <title>4 - Diseño generativo - Anthony Behm - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://a-behm.github.io/taller-fabricacion/favicon.png">
@@ -106,11 +106,11 @@
       <a href="https://a-behm.github.io/taller-fabricacion/docs/2-cnc-grupal/">2 - Mecanizado CNC Grupal</a>
     </li>
     
-    <li class="active ">
+    <li class="">
       <a href="https://a-behm.github.io/taller-fabricacion/docs/3-2.5-ejes/">3 - Mecanizado 2.5 ejes</a>
     </li>
     
-    <li class="">
+    <li class="active ">
       <a href="https://a-behm.github.io/taller-fabricacion/docs/4-dise%C3%B1o-generativo/">4 - Diseño generativo</a>
     </li>
     
@@ -129,178 +129,170 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">3 - Mecanizado 2.5 ejes</h1>
+<h1 class="title">4 - Diseño generativo</h1>
 <div class="content ">
-  <h1 id="mecanizado-25-ejes">Mecanizado 2.5 ejes</h1>
-<p>Para poder llevar a cabo el respaldo del asiento es necesario la utilización de la técnica de mecaniza de 2.5 ejes, para poder tallar las curvas del respaldo. Durante el desarrollo de esta técnica, la herramienta se puede mover en 3 ejes, pero nunca se movera en las 3 direcciones al mismo tiempo durante  el corte o desvaste.</p>
-<div>
-    <iframe 
-    src='https://alumnos4790.autodesk360.com/shares/public/SH919a0QTf3c32634dcf9f3d0e320d7dd8d2?mode=embed'
-    width="100%" 
-    height="450" 
-    allowfullscreen="true" 
-    webkitallowfullscreen="true" 
-    mozallowfullscreen="true"  
-    frameborder="0">
-    </iframe>    
-</div>
-<h1 id="preparación">Preparación</h1>
-<p>Desde el archivo de la silla fresia, debemos aislar el respaldo de la silla en un archivo nuevo para poder trabajar de mejor manera sobre este.
-Teniendo el archivo aislado debemos colocar y alinear el respaldo con el origen.
-<img src="/taller-fabricacion/img/2.5/f8.jpg" alt="MaquinaCNC"></p>
-<p>Luego debemos hacer un sketch para poder generar un bloque, mediante un extrude, dando origen a un volumen.
-<img src="/taller-fabricacion/img/2.5/f4.jpg" alt="MaquinaCNC"></p>
-<h1 id="manufactura">Manufactura</h1>
-<p>Luego  de escoger la misma configuración que usamos para la silla fresia, damos paso a la manufactura.</p>
-<h2 id="tallado-adaptativo">Tallado adaptativo</h2>
-<p><img src="/taller-fabricacion/img/2.5/f5.jpg" alt="MaquinaCNC"></p>
-<h2 id="paralelo">Paralelo</h2>
-<p><img src="/taller-fabricacion/img/2.5/f6.jpg" alt="MaquinaCNC">
-<img src="/taller-fabricacion/img/2.5/f7.jpg" alt="MaquinaCNC"></p>
-<h2 id="simulaciones">Simulaciones</h2>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/taller-fabricacion/img/2.5-1.m4v"  type="video/mp4">
-    </video>
-</div>
-<h2 id="proceso-real">Proceso Real</h2>
+  <h1 id="diseño-generativo">Diseño generativo</h1>
+<h2 id="problema-optimización-del-ala-de-un-avión">Problema: Optimización del ala de un avión</h2>
+<h3 id="problema">Problema</h3>
+<p>Para poder solucionar este problema, optimizaremos el peso del ala del avión, esto debido a que a menor peso también tendremos menor consumo de combustible y en general un mejor rendimiento.</p>
+<p><img src="/taller-fabricacion/img/gen/3.jpg" alt="ala"></p>
+<p>Para bajar el peso del ala y mejorar el rendimiento general del avión, procederemos a estudiar y trabajar con las costillas del ala del avión.</p>
+<p><img src="/taller-fabricacion/img/gen/2.jpg" alt="ala"></p>
+<h3 id="análisis">Análisis</h3>
+<p>Lo primero que debemos hacer es analizar la pieza, para ello hacemos un estudio en Fusion 360, donde demarcamos las zonas fijas de la pieza y las zonas que realizan más fuerza.</p>
+<p><img src="/taller-fabricacion/img/gen/5.png" alt="ala"></p>
+<p>El resultado que obtenemos nos muestra en colores la resistencia de la pieza frente a las fuerzas externas que se aplican sobre ella, que en este caso son de 100 N en la zona inferior de la costilla. Podemos notar que la zona azul es aquella más resistente y la menos roja resistente, dejando entre ver que la zona inferior de la costilla es la más propensa a sufrir transformaciones por fuerzas externas.</p>
+<p><img src="/taller-fabricacion/img/gen/4.png" alt="ala"></p>
+<h3 id="diseño-generativo-1">Diseño generativo</h3>
+<p>Luego de nuestro análisis, es hora de generar una pieza más ligera, pero que al mismo tiempo siga siendo resistente en la zona más debil, como lo es la zona inferior. Para esto vamos a la herramienta de diseño generativo en Fusion 360 y hacemos una serie de configuraciones.</p>
+<p>Primero debemos hacer un offset de la pieza, para poder extruila y demarcar de mejor manera aquellas zonas no deseadas de las que queremos mantener.</p>
+<p><img src="/taller-fabricacion/img/gen/6.png" alt="ala">
+<img src="/taller-fabricacion/img/gen/10.png" alt="ala"></p>
+<p>Luego extruímos y hacemos las distinciones entre zonas.</p>
+<p><img src="/taller-fabricacion/img/gen/7.png" alt="ala">
+<img src="/taller-fabricacion/img/gen/8.png" alt="ala"></p>
+<p>El siguiente paso es definir la configuración de fabrición y límites.</p>
+<p><img src="/taller-fabricacion/img/gen/9.jpg" alt="ala"></p>
+<h3 id="propuesta">Propuesta</h3>
+<p><img src="/taller-fabricacion/img/gen/11.png" alt="ala"></p>
+<p>De esta forma el programa nos entrega una pieza que optimiza el peso y que se adapta a todos los parámetros que anteriormente seleccionamos. Para poder crear nuestra propia pieza, debemos sobreponer nuestra pieza original, controlar la opacidad y de esta manera mediante dibujo y extrusión adaptar la propuesta del programa a nuestras mecesidades.</p>
+<p><img src="/taller-fabricacion/img/gen/12.png" alt="ala"></p>
+<p>Para finalmente obtener el resultado:</p>
+<p><img src="/taller-fabricacion/img/gen/13.png" alt="ala"></p>
 <p>
 <link rel="stylesheet" href="/taller-fabricacion/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg" alt="1st" />
-				    </div>
-			      <figcaption>
-		          <p>1st</p>
-			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg" alt="10th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//10.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//10.png" alt="10th" />
 				    </div>
 			      <figcaption>
 		          <p>10th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//10.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg" alt="11th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//11.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//11.png" alt="11th" />
 				    </div>
 			      <figcaption>
 		          <p>11th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//11.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg" alt="12th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//12.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//12.png" alt="12th" />
 				    </div>
 			      <figcaption>
 		          <p>12th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//12.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg" alt="2nd" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//13.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//13.png" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//13.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//2.jpg" alt="2nd" />
 				    </div>
 			      <figcaption>
 		          <p>2nd</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//2.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg" alt="3rd" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//3.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//3.jpg" alt="3rd" />
 				    </div>
 			      <figcaption>
 		          <p>3rd</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//3.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg" alt="4th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//4.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//4.png" alt="4th" />
 				    </div>
 			      <figcaption>
 		          <p>4th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//4.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg" alt="5th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//5.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//5.png" alt="5th" />
 				    </div>
 			      <figcaption>
 		          <p>5th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//5.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg" alt="6th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//6.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//6.png" alt="6th" />
 				    </div>
 			      <figcaption>
 		          <p>6th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//6.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg" alt="7th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//7.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//7.png" alt="7th" />
 				    </div>
 			      <figcaption>
 		          <p>7th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//7.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg" alt="8th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//8.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//8.png" alt="8th" />
 				    </div>
 			      <figcaption>
 		          <p>8th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//8.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg" alt="9th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/gen//9.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/gen//9.jpg" alt="9th" />
 				    </div>
 			      <figcaption>
 		          <p>9th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/gen//9.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
