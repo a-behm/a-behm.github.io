@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>3 - Mecanizado 2.5 ejes - Anthony Behm - Taller Fabricación 2021</title>
+  <title>6 - Molde - Anthony Behm - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://a-behm.github.io/taller-fabricacion/favicon.png">
@@ -106,7 +106,7 @@
       <a href="https://a-behm.github.io/taller-fabricacion/docs/2-cnc-grupal/">2 - Mecanizado CNC Grupal</a>
     </li>
     
-    <li class="active ">
+    <li class="">
       <a href="https://a-behm.github.io/taller-fabricacion/docs/3-2.5-ejes/">3 - Mecanizado 2.5 ejes</a>
     </li>
     
@@ -118,7 +118,7 @@
       <a href="https://a-behm.github.io/taller-fabricacion/docs/5-impresi%C3%B3n-3d/">5 - Impresión 3D</a>
     </li>
     
-    <li class="">
+    <li class="active ">
       <a href="https://a-behm.github.io/taller-fabricacion/docs/6-molde/">6 - Molde</a>
     </li>
     
@@ -137,180 +137,205 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">3 - Mecanizado 2.5 ejes</h1>
+<h1 class="title">6 - Molde</h1>
 <div class="content ">
-  <h1 id="mecanizado-25-ejes">Mecanizado 2.5 ejes</h1>
-<p>Para poder llevar a cabo el respaldo del asiento es necesario la utilización de la técnica de mecaniza de 2.5 ejes, para poder tallar las curvas del respaldo. Durante el desarrollo de esta técnica, la herramienta se puede mover en 3 ejes, pero nunca se movera en las 3 direcciones al mismo tiempo durante  el corte o desvaste.</p>
-<div>
-    <iframe 
-    src='https://alumnos4790.autodesk360.com/shares/public/SH919a0QTf3c32634dcf9f3d0e320d7dd8d2?mode=embed'
-    width="100%" 
-    height="450" 
-    allowfullscreen="true" 
-    webkitallowfullscreen="true" 
-    mozallowfullscreen="true"  
-    frameborder="0">
-    </iframe>    
-</div>
-<h1 id="preparación">Preparación</h1>
-<p>Desde el archivo de la silla fresia, debemos aislar el respaldo de la silla en un archivo nuevo para poder trabajar de mejor manera sobre este.
-Teniendo el archivo aislado debemos colocar y alinear el respaldo con el origen.
-<img src="/taller-fabricacion/img/2.5/f8.jpg" alt="MaquinaCNC"></p>
-<p>Luego debemos hacer un sketch para poder generar un bloque, mediante un extrude, dando origen a un volumen.
-<img src="/taller-fabricacion/img/2.5/f4.jpg" alt="MaquinaCNC"></p>
-<h1 id="manufactura">Manufactura</h1>
-<p>Luego  de escoger la misma configuración que usamos para la silla fresia, damos paso a la manufactura.</p>
-<h2 id="tallado-adaptativo">Tallado adaptativo</h2>
-<p>Con el tallado adaptativo daremos una primer desbaste a la pieza, con el que sacaremos una gran cantidad de material, permitiendonos de manera facil lograr una forma muy similar a la que requerimos, pero con una terminación no tan fina.</p>
-<p><img src="/taller-fabricacion/img/2.5/f5.jpg" alt="MaquinaCNC"></p>
-<h2 id="paralelo">Paralelo</h2>
-<p>Con el procedimiento en paralelo lograremos la terminación más fina que buscamos. Para poder obetener un buen resultado realizaremos el proceso hacia ambos lados, en ejes distintos, permitiéndonos una terminación más fina.
-<img src="/taller-fabricacion/img/2.5/f6.jpg" alt="MaquinaCNC">
-<img src="/taller-fabricacion/img/2.5/f7.jpg" alt="MaquinaCNC"></p>
-<h2 id="simulaciones">Simulaciones</h2>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/taller-fabricacion/img/2.5-1.m4v"  type="video/mp4">
-    </video>
-</div>
-<h2 id="proceso-real">Proceso Real</h2>
+  <h1 id="creación-de-molde">Creación de molde</h1>
+<p>En este tutorial vamos a crear un molde apartir de un objeto 3D, para poder generar copias por vaciado de resina las veces que sea necesarario, explorando una nueva forma de fabricación.</p>
+<h2 id="modelo">Modelo</h2>
+<p>Antes de partir con la creación de nuestro molde, debemos crear un modelo 3D, para poder &ldquo;sacarle copia&rdquo;. Para ello, en este caso realizaremos un Sketch de nuestra figura y luego realizaremos un revolve, con la configuración que se puede apreciar en la imagen.</p>
+<p><img src="/taller-fabricacion/img/molde/1.png" alt="m">
+<img src="/taller-fabricacion/img/molde/2.jpg" alt="m"></p>
+<p>Lo que genera un resultado como el de la imagen</p>
+<p><img src="/taller-fabricacion/img/molde/4.jpg" alt="m"></p>
+<p>Terminando el modelo daremos paso a la creación del molde.</p>
+<h2 id="molde">Molde</h2>
+<p>Para poder crear el molde debemos generar un cuerpo al rededor de nuestro modelo, que contega la forma &ldquo;en negativo&rdquo; de nuestro modelo. Para esto, generemos un sketch en la zona inferior de nuestro modelo.</p>
+<p><img src="/taller-fabricacion/img/molde/5.jpg" alt="m"></p>
+<p>Luego hacemos un extrusión, que cubra contenga totalmente el modelo. Es importante que se seleccione la opción de crear un nuevo cuerpo, para que luego podamos hacer la unión.</p>
+<p><img src="/taller-fabricacion/img/molde/6.jpg" alt="m"></p>
+<p>Ahora para poder trabajar de mejor manera, bajaremos la opacidad del molde, y pintaremos nuestro modelo.
+<img src="/taller-fabricacion/img/molde/7.jpg" alt="m">
+<img src="/taller-fabricacion/img/molde/8.jpg" alt="m"></p>
+<p>Para finalmente crear nuestro molde, con el comando de unión debemos realizar un corte entre ambos cuerpos, pero mantiendolos, lo que dará como resultado el molde con el modelo 3D incorporado.</p>
+<p><img src="/taller-fabricacion/img/molde/9.jpg" alt="m">
+<img src="/taller-fabricacion/img/molde/10.png" alt="m">
+<img src="/taller-fabricacion/img/molde/11.png" alt="m"></p>
+<h2 id="desmolde">Desmolde</h2>
+<p>Como podemos notar, el molde coincide a la perfección con nuestro modelo, lo que puede generar inconvenientes a la hora de poder realizar el desmolde. Para evitar lo anterior, crearemos un ángulo de desmolde. Para ello, realizamos un sketch proyectado sobre nuestro modelo, el que usaremos como base para dar con el ángulo.
+<img src="/taller-fabricacion/img/molde/12.png" alt="m">
+<img src="/taller-fabricacion/img/molde/13.jpg" alt="m"></p>
+<p>Luego realizaremos un revolve, pero con la diferencia de que esta vez cortaremos los objetos, para poder generar este ángulo de seguridad a la hora de usar nuestro molde.
+<img src="/taller-fabricacion/img/molde/14.jpg" alt="m"></p>
+<p>El resultado, como podemos apreciar, es una pequeña diferecia entre el molde y el modelo, que permitira un ángulo de salida de nuestro objeto a la hora del desmolde</p>
+<p><img src="/taller-fabricacion/img/molde/15.jpg" alt="m"></p>
+<hr>
 <p>
 <link rel="stylesheet" href="/taller-fabricacion/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg" alt="1st" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//1.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//1.png" alt="1st" />
 				    </div>
 			      <figcaption>
 		          <p>1st</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//1.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//1.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg" alt="10th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//10.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//10.png" alt="10th" />
 				    </div>
 			      <figcaption>
 		          <p>10th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//10.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//10.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg" alt="11th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//11.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//11.png" alt="11th" />
 				    </div>
 			      <figcaption>
 		          <p>11th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//11.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//11.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg" alt="12th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//12.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//12.png" alt="12th" />
 				    </div>
 			      <figcaption>
 		          <p>12th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//12.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//12.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg" alt="2nd" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//13.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//13.jpg" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//13.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//14.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//14.jpg" alt="14th" />
+				    </div>
+			      <figcaption>
+		          <p>14th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//14.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//15.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//15.jpg" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//15.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//2.jpg" alt="2nd" />
 				    </div>
 			      <figcaption>
 		          <p>2nd</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//2.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//2.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg" alt="3rd" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//3.png');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//3.png" alt="3rd" />
 				    </div>
 			      <figcaption>
 		          <p>3rd</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//3.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//3.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg" alt="4th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//4.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//4.jpg" alt="4th" />
 				    </div>
 			      <figcaption>
 		          <p>4th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//4.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//4.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg" alt="5th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//5.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//5.jpg" alt="5th" />
 				    </div>
 			      <figcaption>
 		          <p>5th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//5.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//5.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg" alt="6th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//6.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//6.jpg" alt="6th" />
 				    </div>
 			      <figcaption>
 		          <p>6th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//6.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//6.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg" alt="7th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//7.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//7.jpg" alt="7th" />
 				    </div>
 			      <figcaption>
 		          <p>7th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//7.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//7.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg" alt="8th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//8.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//8.jpg" alt="8th" />
 				    </div>
 			      <figcaption>
 		          <p>8th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//8.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//8.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg');" >
-				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg" alt="9th" />
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/molde//9.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/molde//9.jpg" alt="9th" />
 				    </div>
 			      <figcaption>
 		          <p>9th</p>
 			      </figcaption>
-				    <a href="https://a-behm.github.io/taller-fabricacion//img/galeriacnc//9.jpg" itemprop="contentUrl"></a>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/molde//9.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -375,6 +400,7 @@ Teniendo el archivo aislado debemos colocar y alinear el respaldo con el origen.
     </div>
 </div>
 </p>
+<p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
 </div>
