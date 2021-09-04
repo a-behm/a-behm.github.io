@@ -146,6 +146,10 @@
       <a href="https://a-behm.github.io/taller-fabricacion/docs/molde/">EXÁMEN: Molde</a>
     </li>
     
+    <li class="">
+      <a href="https://a-behm.github.io/taller-fabricacion/docs/examen/">EXAMEN: FINAL</a>
+    </li>
+    
   </ul>
 </div>
 
@@ -155,19 +159,19 @@
           
 <h1 class="title">5 - Impresión 3D</h1>
 <div class="content ">
-  <h1 id="impresión-3d">Impresión 3D</h1>
+  <h1 id="impresión-3d-fdm">Impresión 3D FDM</h1>
 <p>Para poder realizar una impresión 3D vamos a hacer uso de un software de slicer llamado Cura. Con este podremos acceder a una gran cantidad de presets y de esa manera manejar un gran número de impresoras 3D, gracias a su característica open source. En este caso ocuparemos la Ender 3 de la marca Creality.</p>
 <p>Cura : <a href="https://ultimaker.com/es/software/ultimaker-cura">https://ultimaker.com/es/software/ultimaker-cura</a></p>
 <h2 id="configuración-previa">Configuración previa</h2>
 <p>Antes de partir imprimiendo nuestro modelo, debemos seleccionar la impresora Ender 3.</p>
-<p><img src="/taller-fabricacion/img/imp/1.jpg" alt="IMP3">
-<img src="/taller-fabricacion/img/imp/2.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/1.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/2.jpg" alt="IMP3"></p>
 <p>Y luego, seleccionar el material que vamos a usar, en este caso Purple PLA +</p>
 <p><img src="/taller-fabricacion/img/imp/3.jpg" alt="IMP3"></p>
 <h2 id="impresión">Impresión</h2>
 <p>Para realizar este ejercicio seleccionamos un modelo llamado benchy, que es un modelo que frecuentemente se usa para calibrar nuestra impresora 3D. Cabe destacar que el modelo eligido debe ser importado en formato STL, y que además no genere situaciones en las que la impresión se quede sin soporte, ya que en esos casos la impresión no se puede llevar a cabo.</p>
-<p><img src="/taller-fabricacion/img/imp/benchy.jpg" alt="IMP3">
-<img src="/taller-fabricacion/img/imp/6.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/benchy.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/6.jpg" alt="IMP3"></p>
 <h3 id="ajustes">Ajustes</h3>
 <p>Como primer ajuste, debemos colocar el <em>layer height</em> en 0.3 mm. Luego de esto generemos nuestra primeria iteración y apretamos en <em>slice</em>, para llevar a cabo el proceso.</p>
 <p><img src="/taller-fabricacion/img/imp/7.jpg" alt="IMP3"></p>
@@ -176,6 +180,19 @@
 <p>Finalmente, podemos observar una mejora en los tiempos de impresión a un tiempo de 2 horas y 43 minutos, y un mejor uso del material de 15 gramos.</p>
 <p><img src="/taller-fabricacion/img/imp/9.jpg" alt="IMP3"></p>
 <hr>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h1 id="impresión-3d-sla">Impresión 3D SLA</h1>
+<h2 id="configuración-previa-1">Configuración previa</h2>
+<p>Antes de partir con la impresión debemos obviamente bajar el slicer correspondiente, que en este caso es PreForm. Abrimos el software y damos paso a selecionar la impresora a utilizar, que en este caso en la Form 3. Podemos notar que existen una gran cantidad de ajustes a la hora de imprimir nuestro modelo, el más importante es el grosor de capa, el que define de manera general la calidad y resolución de nuestra impresión. De esta forma es que la calidad se relaciona de manera inversamente proporcional con la calidad, ya que a una mayor velocidad de impresión, menor calidad. En este caso en particular, usaremos la impresión más rápida.</p>
+<p><img src="/taller-fabricacion/img/imp/10.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/11.jpg" alt="IMP3"></p>
+<h2 id="impresión-1">Impresión</h2>
+<p>Ahora debemos seleccionar el modelo a imprimir. En este caso seleccionaremos una parte del molde que luego utilizaremos para nuestro examen. Este parte es la que va poder dentro del molde, dando cavida y espacio, esta parte no será visible, por lo que no se requiere una impresión de alta definición, es por ello, que optaremos por una impresión más rapida.</p>
+<p><img src="/taller-fabricacion/img/imp/12.jpg" alt="IMP3"></p>
+<p><img src="/taller-fabricacion/img/imp/vaso.jpeg" alt="IMP3"></p>
+<p>Debido a la forma de esta parte del molde, vamos a requerir soporte en algunas partes del molde, es por ello que aplicamos la generación de soportes automática de este software. Ahora nuestro modelo está listo para imprimir, alcanzando un tiempo de impresión de 20 horas y 30 minutos. El software nos da una advertencia de impresión debido a que el molde es hueco en su interior (para ahorrar material de impresión), omitimos la advertencia debido a que no requerimos una gran definición de impresión.</p>
+<p><img src="/taller-fabricacion/img/imp/13.jpg" alt="IMP3"></p>
+<h2 id="volver-arribatop"><a href="#top">[Volver Arriba]</a></h2>
 <p>
 <link rel="stylesheet" href="/taller-fabricacion/css/hugo-easy-gallery.css" />
 
@@ -189,6 +206,50 @@
 		          <p>1st</p>
 			      </figcaption>
 				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//1.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/imp//10.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/imp//10.jpg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//10.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/imp//11.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/imp//11.jpg" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//11.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/imp//12.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/imp//12.jpg" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//12.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/imp//13.jpg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/imp//13.jpg" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//13.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
@@ -268,6 +329,17 @@
 				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//benchy.jpg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://a-behm.github.io/taller-fabricacion//img/imp//vaso.jpeg');" >
+				      <img itemprop="thumbnail" src="https://a-behm.github.io/taller-fabricacion//img/imp//vaso.jpeg" alt="Vaso" />
+				    </div>
+			      <figcaption>
+		          <p>Vaso</p>
+			      </figcaption>
+				    <a href="https://a-behm.github.io/taller-fabricacion//img/imp//vaso.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
 </div>
  
 
@@ -330,7 +402,6 @@
     </div>
 </div>
 </p>
-<p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
 </div>
